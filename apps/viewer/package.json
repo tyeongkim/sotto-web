@@ -1,7 +1,7 @@
 {
 	"name": "@sotto-web/viewer",
 	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
@@ -9,6 +9,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@sotto-web/shared": "workspace:^",
 		"@vanilla-extract/css": "^1.17.2",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0"
