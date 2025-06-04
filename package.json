@@ -1,0 +1,27 @@
+{
+	"name": "sotto-web",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"workspaces": ["apps/*", "packages/*"],
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"format": "biome check --fix",
+		"commit": "bun format && git add . && cz"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@commitlint/cli": "^19.8.1",
+		"@commitlint/config-conventional": "^19.8.1",
+		"commitizen": "^4.3.1",
+		"cz-conventional-changelog": "^3.3.0",
+		"turbo": "^2.5.4"
+	},
+	"packageManager": "bun@1.2.15"
+}
