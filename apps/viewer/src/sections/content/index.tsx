@@ -1,5 +1,9 @@
+import { useContext } from 'react';
+import { AppContext } from '../../lib/app';
 import { contentStyle } from './styles.css';
 
 export function Content() {
-	return <pre className={contentStyle}>Diary Content</pre>;
+	const { diary } = useContext(AppContext);
+
+	return <pre className={contentStyle}>{diary?.content}</pre>;
 }
