@@ -6,13 +6,13 @@ WORKDIR /web
 RUN bun install --frozen-lockfile
 RUN bun run build
 
-FROM builder AS landing
+FROM nginx:alpine AS landing
 
-WORKDIR /web/apps/landing
+COPY --from=builder /web/apps/landing/dist /usr/share/nginx/html
 
-EXPOSE 3000
+EXPOSE 80
 
-CMD ["bun", "run", "start"]
+CMD ["nginx", "-g", "daemon off;"]
 
 FROM nginx:alpine AS viewer
 
