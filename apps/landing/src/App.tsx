@@ -52,8 +52,12 @@ export default function App() {
 				}
 			>
 				<div className={buttonGroup}>
-					<Button>Android (.apk)</Button>
-					<Button>iOS (.app)</Button>
+					<a href='https://github.com/cottons-kr/sotto-app/releases/download/1.1/Sotto-Android.zip'>
+						<Button>Android (.apk)</Button>
+					</a>
+					<a href='https://github.com/cottons-kr/sotto-app/releases/download/1.1/Sotto-iOS-Simulator.zip'>
+						<Button>iOS (.app)</Button>
+					</a>
 				</div>
 			</DetailSection>
 			<Footer />
