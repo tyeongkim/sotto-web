@@ -1,14 +1,14 @@
 import '@sotto-web/shared/styles/reset.css';
 import '@sotto-web/shared/styles/font.css';
 import { Download, LockKeyhole, PackageOpen } from 'lucide-react';
-import { Button } from '../components/button';
-import { BannerSection } from '../sections/banner';
-import { DetailSection } from '../sections/detail';
-import { Footer } from '../sections/footer';
-import { HeroSection } from '../sections/hero';
-import { buttonGroup, sharing } from '../styles/app.css';
+import { Button } from './components/button';
+import { BannerSection } from './sections/banner';
+import { DetailSection } from './sections/detail';
+import { Footer } from './sections/footer';
+import { HeroSection } from './sections/hero';
+import { buttonGroup, sharing } from './styles/app.css';
 
-export default function IndexPage() {
+export default function App() {
 	return (
 		<>
 			<HeroSection />
