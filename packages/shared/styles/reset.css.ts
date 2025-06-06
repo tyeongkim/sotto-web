@@ -27,7 +27,7 @@ globalStyle('*', {
 globalStyle('*:focus', { outline: 'none' });
 
 globalStyle('a', {
-	width: '100%',
+	display: 'contents',
 	color: 'inherit',
 	cursor: 'pointer',
 	textDecoration: 'none',

@@ -1,4 +1,3 @@
-import { NuqsAdapter } from 'nuqs/adapters/react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
@@ -7,8 +6,4 @@ if (!root) {
 	throw new Error('Root element not found');
 }
 
-ReactDOM.createRoot(root).render(
-	<NuqsAdapter>
-		<App />
-	</NuqsAdapter>,
-);
+ReactDOM.createRoot(root).render(<App />);
