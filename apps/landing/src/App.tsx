@@ -4,6 +4,7 @@ import { Download, LockKeyhole, PackageOpen } from 'lucide-react';
 import { Button } from './components/button';
 import { BannerSection } from './sections/banner';
 import { DetailSection } from './sections/detail';
+import { Footer } from './sections/footer';
 import { HeroSection } from './sections/hero';
 import { buttonGroup, sharing } from './styles/app.css';
 
@@ -55,6 +56,7 @@ export default function App() {
 					<Button>iOS (.app)</Button>
 				</div>
 			</DetailSection>
+			<Footer />
 		</>
 	);
 }
