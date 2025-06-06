@@ -1,9 +1,4 @@
-import ReactDOM from 'react-dom/client';
+import { ViteReactSSG } from 'vite-react-ssg/single-page';
 import App from './App';
 
-const root = document.getElementById('root');
-if (!root) {
-	throw new Error('Root element not found');
-}
-
-ReactDOM.createRoot(root).render(<App />);
+export const createRoot = ViteReactSSG(<App />);
