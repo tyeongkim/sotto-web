@@ -28,6 +28,7 @@ export const titleText = style({
 	fontWeight: 600,
 	lineHeight: 1.5,
 	letterSpacing: -1.5,
+	textAlign: 'center',
 });
 
 export const downloadGroup = style({
