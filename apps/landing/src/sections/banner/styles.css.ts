@@ -4,7 +4,7 @@ export const banner = style({
 	width: '100%',
 	maxWidth: 1400,
 	margin: '0 auto',
-	padding: '0 16px',
+	padding: '0 20px',
 });
 
 export const image = style({
