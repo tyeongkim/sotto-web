@@ -1,4 +1,7 @@
 {
-	"extends": "@repo/typescript-config/vite.json",
-	"include": ["src"]
+  "extends": "@repo/typescript-config/next.json",
+  "include": [
+    "src",
+    ".next/types/**/*.ts"
+  ]
 }

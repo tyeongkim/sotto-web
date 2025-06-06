@@ -4,6 +4,7 @@ node_modules
 *.log
 dist
 dist-ssr
+.next
 *.local
 .env
 .cache
