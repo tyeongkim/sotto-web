@@ -40,6 +40,11 @@ export const titleStyle = style({
 	fontSize: 36,
 	fontWeight: 600,
 	letterSpacing: -1.35,
+	'@media': {
+		'(max-width: 600px)': {
+			fontSize: 32,
+		},
+	},
 });
 
 export const descriptionStyle = style({
@@ -47,6 +52,11 @@ export const descriptionStyle = style({
 	fontWeight: 500,
 	lineHeight: 1.5,
 	letterSpacing: -0.75,
+	'@media': {
+		'(max-width: 600px)': {
+			fontSize: 16,
+		},
+	},
 });
 
 export const lineStyle = style({

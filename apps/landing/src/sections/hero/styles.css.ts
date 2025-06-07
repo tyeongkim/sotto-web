@@ -29,6 +29,11 @@ export const titleText = style({
 	lineHeight: 1.5,
 	letterSpacing: -1.5,
 	textAlign: 'center',
+	'@media': {
+		'(max-width: 600px)': {
+			fontSize: 32,
+		},
+	},
 });
 
 export const downloadGroup = style({
