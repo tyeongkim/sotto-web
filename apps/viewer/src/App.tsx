@@ -4,6 +4,7 @@ import { useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
 import { AppContext } from './lib/app';
 import { decrypt } from './lib/crypto';
+import { Additional } from './sections/additional';
 import { Author } from './sections/author';
 import { Content } from './sections/content';
 import { Divider } from './sections/divider';
@@ -36,6 +37,8 @@ export default function App() {
 				setDiary({ ...diary, updatedAt: data.updatedAt });
 				setAuthor(data.owner);
 				setIsLoading(false);
+
+				console.log('Diary loaded:', diary);
 			});
 	}, [uuid, key]);
 
@@ -47,6 +50,7 @@ export default function App() {
 				) : (
 					<>
 						<Header />
+						<Additional />
 						<Author />
 						<Divider />
 						<Content />
