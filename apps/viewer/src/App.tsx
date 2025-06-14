@@ -23,6 +23,7 @@ export default function App() {
 	useEffect(() => {
 		if (!uuid || !key) {
 			console.error('UUID or key is missing');
+			location.href = 'https://sotto.tyeongk.im/';
 			return;
 		}
 
