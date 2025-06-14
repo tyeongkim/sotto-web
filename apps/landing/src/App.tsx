@@ -48,18 +48,18 @@ export default function App() {
 				description={
 					'Only works on iOS Simulator, not real iPhone.' +
 					'\n' +
-					'Latest version : v1.1'
+					'Latest version : v1.2'
 				}
 			>
 				<div className={buttonGroup}>
 					<a
-						href='https://github.com/cottons-kr/sotto-app/releases/download/1.1/Sotto-Android.zip'
+						href='https://github.com/cottons-kr/sotto-app/releases/download/1.2/Sotto-Android.zip'
 						rel='noopener noreferrer'
 					>
 						<Button>Android (.apk)</Button>
 					</a>
 					<a
-						href='https://github.com/cottons-kr/sotto-app/releases/download/1.1/Sotto-iOS-Simulator.zip'
+						href='https://github.com/cottons-kr/sotto-app/releases/download/1.2/Sotto-iOS-Simulator.zip'
 						rel='noopener noreferrer'
 					>
 						<Button>iOS (.app)</Button>
