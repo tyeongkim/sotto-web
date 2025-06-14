@@ -4,6 +4,7 @@ type Diary = {
 	content: string;
 	location?: string;
 	weather?: Weather;
+	attachments: Array<{ remote_url: string }>;
 	updatedAt: string;
 };
 

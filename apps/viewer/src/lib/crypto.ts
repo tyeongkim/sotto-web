@@ -24,5 +24,14 @@ export async function decrypt(
 	);
 
 	const result = new TextDecoder().decode(decrypted);
+	return result;
+}
+
+export async function decryptJson(
+	base64Key: string,
+	base64Nonce: string,
+	base64Data: string,
+) {
+	const result = await decrypt(base64Key, base64Nonce, base64Data);
 	return JSON.parse(result);
 }

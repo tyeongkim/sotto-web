@@ -3,8 +3,9 @@ import '@sotto-web/shared/styles/font.css';
 import { useQueryState } from 'nuqs';
 import { useEffect, useState } from 'react';
 import { AppContext } from './lib/app';
-import { decrypt } from './lib/crypto';
+import { decryptJson } from './lib/crypto';
 import { Additional } from './sections/additional';
+import { Attachments } from './sections/attachments';
 import { Author } from './sections/author';
 import { Content } from './sections/content';
 import { Divider } from './sections/divider';
@@ -33,7 +34,7 @@ export default function App() {
 			.then((res) => res.json())
 			.then(async (response: DiaryResponse) => {
 				const { data } = response;
-				const diary = await decrypt(key, data.nonce, data.data);
+				const diary = await decryptJson(key, data.nonce, data.data);
 				setDiary({ ...diary, updatedAt: data.updatedAt });
 				setAuthor(data.owner);
 				setIsLoading(false);
@@ -43,7 +44,7 @@ export default function App() {
 	}, [uuid, key]);
 
 	return (
-		<AppContext value={{ diary, author }}>
+		<AppContext value={{ diary, author, key }}>
 			<div className={main}>
 				{isLoading ? (
 					<div>Loading...</div>
@@ -53,6 +54,7 @@ export default function App() {
 						<Additional />
 						<Author />
 						<Divider />
+						<Attachments />
 						<Content />
 					</>
 				)}

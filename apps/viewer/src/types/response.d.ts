@@ -15,3 +15,8 @@ type DiaryResponse = {
 	};
 	responseAt: string;
 };
+
+type AttachmentResponse = {
+	data: string;
+	nonce: string;
+};
