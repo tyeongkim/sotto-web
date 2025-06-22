@@ -19,7 +19,7 @@ export function HeroSection() {
 			</div>
 			<div className={downloadGroup}>
 				<a href='#download' rel='noopener noreferrer'>
-					<Button>Download - v1.2</Button>
+					<Button>Download - v1.2.1</Button>
 				</a>
 				<span className={information}>Available on iOS and Android</span>
 			</div>
