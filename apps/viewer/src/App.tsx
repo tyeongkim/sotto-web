@@ -28,7 +28,7 @@ export default function App() {
 		}
 
 		const baseUrl = import.meta.env.PROD
-			? 'https://sotto.tyeongk.im/api'
+			? 'https://sotto-api.tyeongk.im'
 			: 'http://localhost:3000';
 
 		fetch(`${baseUrl}/diaries/${uuid}`)
