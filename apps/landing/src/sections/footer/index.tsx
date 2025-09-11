@@ -6,7 +6,7 @@ export function Footer() {
 			<ul className={list}>
 				<li className={listItem}>
 					<a
-						href='https://github.com/cottons-kr'
+						href='https://github.com/tyeongkim/sotto-app'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
